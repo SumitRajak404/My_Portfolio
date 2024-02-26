@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Author</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div id="wrapper">
+	<div class="card">
+		<div class="card__inner" onClick="flipCard();">
+			<div class="card__face card__face--front">Click Me</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">
+						<img src="img.jpg" alt="" class="pp" />
+					</div>
+					<div class="card__body">
+            <center><h3>About Author</h3></center>
+						<div class="card__body_p">
+<p>Hello! I'm Sumit Rajak, a passionate and versatile developer specializing in both front-end and back-end technologies. Currently pursuing a Bachelor's degree in Industrial Engineering, I possess a strong foundation in programming languages such as HTML, CSS, JavaScript, Python, and Node.js. My journey in the realm of technology began with an insatiable curiosity to understand the mechanics behind web development. Over time, I've honed my skills in crafting engaging and responsive user interfaces while also delving into the intricacies of server-side scripting and database management. I'm excited about the endless possibilities technology offers and thrive on continuously expanding my knowledge and expertise in the ever-evolving landscape of software development.</p>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+  <script>
+   let count=0;
+    function flipCard() {
+   count++;
+    if(count<=1){
+      const card = document.querySelector(".card__inner");
+   card.classList.toggle('is-flipped');
+    }}
+  </script>
+</body>
+</html>
